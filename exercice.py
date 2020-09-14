@@ -3,15 +3,12 @@
 
 import math
 
-
 def average(a: float, b: float, c: float) -> float:
-    moyenne = (a+b+c)/3
-    return moyenne
+    return (a+b+c)/3
 
 
 def to_radians(angle_degs: float, angle_mins: float, angle_secs: float) -> float:
-    radian = (angle_degs+angle_mins/60+angle_secs)/3600*2*math.pi/360
-    return radian
+    return (angle_degs+angle_mins/60+angle_secs/3600)*2*math.pi/360
 
 
 def to_degrees(angle_rads: float) -> tuple:
@@ -21,13 +18,11 @@ def to_degrees(angle_rads: float) -> tuple:
 
 
 def to_celsius(temperature: float) -> float:
-    celsius = 5*(temperature-32)/9
-    return celsius
+    return 5*(temperature-32)/9
 
 
 def to_farenheit(temperature: float) -> float:
-    farenheit = (9*temperature/5)+32
-    return farenheit
+    return (9*temperature/5)+32
 
 
 def main() -> None:
@@ -44,4 +39,5 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
+
 
